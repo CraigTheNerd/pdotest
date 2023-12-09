@@ -45,6 +45,8 @@ Or make any changes you need to the code in the dist directory.
 Feel free to adapt the code in any way you might need.
 Please respect the Creative Commons Attribution license.
 
+## License
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
