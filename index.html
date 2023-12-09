@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Author -->
+    <meta name="author" content="Craig Christians">
+
+    <!-- Description -->
+    <meta name="description" content="Craig Christians PDO Test">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="PDO Test">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link type="image/vnd.microsoft.icon" href="images/favicon.svg" rel="shortcut icon">
+
+    <!-- Page Title -->
+    <title>PDO Test</title>
+</head>
+<body>
+
+    <main id="page">
+        <section id="content-wrapper">
+
+            <div class="content-header">
+                <a href="/">
+                    <h1>PDO Connection Test</h1>
+                </a>
+            </div>
+
+            <div class="content-text">
+                <p>
+                    Test your database connection
+                </p>
+            </div>
+
+            <div class="error-wrapper">
+                <div class="error-message error-busy"></div>
+                <div class="error-message error-fail"></div>
+                <div class="error-message error-pass"></div>
+            </div>
+
+            <div class="tester">
+
+                <form class="form" id="pdoTest" action="#">
+
+                    <div class="form-block">
+                        <label class="input-label dropdown-label" for="db_host">Database Host</label>
+                        <input class="input-field host-value" type="text" value="" name="db_host" id="db_host" autocomplete="off" placeholder="Database Host">
+                        <ul class="host-list">
+                            <li class="host-list-item">localhost</li>
+                            <li class="host-list-item">127.0.0.1</li>
+                        </ul>
+                        <small></small>
+                    </div>
+                    <div class="form-block">
+                        <label class="input-label dropdown-label" for="db_port">Database Port</label>
+                        <input class="input-field port-value" type="text" value="" name="db_port" id="db_port" autocomplete="off" placeholder="Select Port">
+                        <ul class="port-list">
+<!--                            <li class="port-list-item">1433</li>-->
+<!--                            <li class="port-list-item">1521</li>-->
+                            <li class="port-list-item">3306</li>
+                            <li class="port-list-item">5432</li>
+                        </ul>
+                        <small></small>
+                    </div>
+                    <div class="form-block">
+                        <label class="input-label" for="db_name">Database Name</label>
+                        <input class="input-field" type="text" name="db_name" id="db_name" autocomplete="off" placeholder="Database Name">
+                        <small></small>
+                    </div>
+                    <div class="form-block">
+                        <label class="input-label" for="db_user">Database User</label>
+                        <input class="input-field" type="text" name="db_user" id="db_user" autocomplete="off" placeholder="Database Username">
+                        <small></small>
+                    </div>
+                    <div class="form-block">
+                        <label class="input-label" for="db_pass">Database Password</label>
+                        <input class="input-field" type="password" name="db_pass" id="db_pass" autocomplete="off" placeholder="Database Password">
+                        <i class="fas fa-eye"></i>
+                        <small></small>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-field">
+                        <button class="btn submit-button" type="submit" value="Test Connection">Test Connection</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
